@@ -1,16 +1,44 @@
-# React + Vite
+# Test-Time Adaptation: Optimization vs. Context
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Claim
+[Your one-sentence falsifiable claim here]
 
-Currently, two official plugins are available:
+## Audience & Prerequisites
+Intended for: [e.g., ML practitioners familiar with gradient descent and attention]
+Prerequisites: [list]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Learning Objectives
+- [ ] Understand the optimization-route vs. recurrent-state-route distinction
+- [ ] Observe how demonstration count affects each route's accuracy
+- [ ] Connect the toy result to BDH-CQ's actual test-time adaptation mechanism
 
-## React Compiler
+## Architecture
+- `src/components/TaskGenerator.js` — generates toy rule-based tasks (LIVE, real computation)
+- `src/components/OptimizationAgent.js` — gradient-based toy adapter (LIVE)
+- `src/components/RecurrentAgent.js` — additive-state toy adapter (LIVE)
+- `src/content/BDHModule.jsx` — sourced explanation of BDH-CQ's real mechanism (STATIC TEXT, cited)
+- `src/data/precomputed.json` — [describe what's precomputed here, if anything]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## What's live vs. precomputed vs. illustrative
+- The comparison chart: 100% live computation, re-runs on every slider change
+- The BDH-CQ connection: illustrative analogy + cited claims, NOT a reproduction of BDH-CQ
 
-## Expanding the Oxlint configuration
+## How to reproduce
+\`\`\`bash
+git clone <repo-url>
+cd bdh-test-time-adaptation
+npm install
+npm run dev
+\`\`\`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Primary sources
+1. [Dragon Hatchling paper] — [what it supports]
+2. [BDH-CQ technical report] — [what it supports]
+3. [Primary paper #3, 2022-2026] — [what it supports]
+4. [Primary paper #4 if used]
+
+## AI assistance disclosure
+[Be specific: which files/sections used AI assistance, for what — code scaffolding, writing, etc.]
+
+## Credits & licenses
+[List any reused code, fonts, assets, and their licenses]
