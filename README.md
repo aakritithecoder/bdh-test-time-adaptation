@@ -1,5 +1,9 @@
 # Test-Time Adaptation: Optimization vs. Context
 
+## Live Links
+- **Deployed artifact (no sign-in required):** https://gentle-palmier-2af9b9.netlify.app/
+- **GitHub repository:** https://github.com/aakritithecoder/bdh-test-time-adaptation
+
 ## Claim
 A fixed-size recurrent state can acquire an unseen task's rule at inference
 time — no backward pass, no parameter update — and can rival (and in
