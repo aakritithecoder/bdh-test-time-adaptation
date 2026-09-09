@@ -1,9 +1,5 @@
 # Test-Time Adaptation: Optimization vs. Context
 
-## Live Links
-- **Deployed artifact (no sign-in required):** https://gentle-palmier-2af9b9.netlify.app/
-- **GitHub repository:** https://github.com/aakritithecoder/bdh-test-time-adaptation
-
 ## Claim
 A fixed-size recurrent state can acquire an unseen task's rule at inference
 time — no backward pass, no parameter update — and can rival (and in
@@ -46,6 +42,10 @@ single example to see the actual demonstrations, both predictions, and
 ground truth side by side. A dedicated module then connects this toy
 contrast to BDH-CQ's real, cited mechanism and its documented limits.
 
+## Live Links
+- **Deployed artifact (no sign-in required):** https://gentle-palmier-2af9b9.netlify.app/
+- **GitHub repository:** https://github.com/aakritithecoder/bdh-test-time-adaptation
+  
 The one-sentence claim above is directly testable in the running app:
 switch to `incrementMod` at low demonstration counts and watch the
 optimization route close the gap that `repeatLast2` shows at the same
